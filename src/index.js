@@ -1,9 +1,9 @@
 const express = require("express");
 
 // Router
-const livro_router = require("./router/livro_router.js");
-const estudante_router = require("./router/estudante_router.js");
-const aluguel_router = require("./router/aluguel_router.js");
+const livro_router = require("./routers/livro_router.js");
+const estudante_router = require("./routers/estudante_router.js");
+const aluguel_router = require("./routers/aluguel_router.js");
 
 const app = express();
 const port = 3000;
