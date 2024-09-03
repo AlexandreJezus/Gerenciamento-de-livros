@@ -1,7 +1,12 @@
 let nextID = 1;
 
 const model = (aluguel, id_aluguel = nextID++) => {
-  if (aluguel.nome != undefined && aluguel.nome != "") {
+  if (
+    aluguel.data_aluguel != undefined &&
+    aluguel.data_aluguel != "" &&
+    aluguel.data_devolucao != undefined &&
+    aluguel.data_devolucao != ""
+  ) {
     return {
       id_aluguel,
       id_livro: aluguel.id_livro,
